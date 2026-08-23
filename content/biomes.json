@@ -1,0 +1,14 @@
+{
+  "biomes": {
+    "针叶林": {"ground": ".", "feature": "T", "feature_density": 0.25,
+              "mobs": ["wolf"], "items": ["pine_log"]},
+    "丘陵":   {"ground": ".", "feature": "M", "feature_density": 0.12,
+              "mobs": ["goblin"], "items": ["iron_ore"]},
+    "水域":   {"ground": ".", "feature": "~", "feature_density": 0.20,
+              "mobs": ["river_beast"], "items": ["river_weed"]},
+    "矿洞":   {"ground": ".", "feature": "M", "feature_density": 0.22,
+              "mobs": ["cave_troll"], "items": ["gold_ore"]},
+    "遗迹":   {"ground": ".", "feature": "*", "feature_density": 0.10,
+              "mobs": ["guardian"], "items": ["ancient_relic"]}
+  }
+}

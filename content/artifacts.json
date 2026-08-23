@@ -1,0 +1,32 @@
+{
+  "artifacts": [
+    {"id": "elder_scroll_sun", "name": "上古卷轴·太阳", "en": "The Elder Scroll (Sun)", "kind": "elder_scroll",
+     "desc": "记录太阳运行与命运转折的卷轴。狄克西昂·埃维库斯曾于其中窥见龙裔归来的征兆。直视其文可焚目，亦可授人以寰宇之视。"},
+    {"id": "elder_scroll_blood", "name": "上古卷轴·血", "en": "The Elder Scroll (Blood)", "kind": "elder_scroll",
+     "desc": "涉血与血脉的卷轴，预言以血写就的英雄。其文一旦凝固，便成为不可改易的既往真相。"},
+    {"id": "elder_scroll_dragon", "name": "上古卷轴·龙", "en": "The Elder Scroll (Dragon)", "kind": "elder_scroll",
+     "desc": "能将巨龙放逐于时间长河的卷轴。菲尔迪尔长老曾以此将奥杜因掷向未来，于世界之喉留下永不愈合的时间之伤。"},
+    {"id": "azura_star", "name": "阿祖拉之星", "en": "Azura's Star", "kind": "daedric", "daedra": "azura",
+     "desc": "可无限充能的灵魂石，魔神女王阿祖拉的恩赐，内蕴黄昏与黎明的微光。"},
+    {"id": "mehrunes_razor", "name": "达贡之刃", "en": "Mehrunes' Razor", "kind": "daedric", "daedra": "mehrunes_dagon",
+     "desc": "一击必杀的匕首，毁灭之达贡的造物。刃过之处，命数归零。"},
+    {"id": "wabbajack", "name": "瓦巴杰克", "en": "Wabbajack", "kind": "daedric", "daedra": "sheogorath",
+     "desc": "谢戈拉丝的权杖，能将触及之物随机扭曲为任意形态——常是滑稽，偶尔是灾难。"},
+    {"id": "volendrung", "name": "沃伦德隆", "en": "Volendrung", "kind": "daedric", "daedra": "malacath",
+     "desc": "玛拉卡斯的战锤，重逾山岳，挥之则地动山摇，兽人之荣耀。"},
+    {"id": "dawnbreaker", "name": "黎明破晓", "en": "Dawnbreaker", "kind": "daedric", "daedra": "meridia",
+     "desc": "梅瑞迪亚赐下的炽光之剑，专焚亡灵，黎明般刺破黑暗。"},
+    {"id": "ebony_blade", "name": "乌木之刃", "en": "Ebony Blade", "kind": "daedric", "daedra": "mephala",
+     "desc": "梅法拉的诅咒之剑，以背叛与亲戮喂养，饮血则锋。"},
+    {"id": "skeleton_key", "name": "骷髅钥匙", "en": "Skeleton Key", "kind": "daedric", "daedra": "nocturnal",
+     "desc": "诺克图娜尔的万能钥匙，能开启一切锁——乃至命运的锁。"},
+    {"id": "oghma_infinium", "name": "奥格玛·无限", "en": "Oghma Infinium", "kind": "daedric", "daedra": "hermaeus_mora",
+     "desc": "赫玛尤斯·莫拉所撰的禁忌之书，读之可于一瞬通晓万物——或迷失于其中。"},
+    {"id": "auriels_bow", "name": "奥瑞埃尔之弓", "en": "Auriel's Bow", "kind": "aedric", "divine": "akatosh",
+     "desc": "时间之神的神弓，以日月为矢，曾于长夜中射落魔神的光芒。"},
+    {"id": "chrysamere", "name": "克里萨米尔", "en": "Chrysamere", "kind": "aedric", "divine": "stendarr",
+     "desc": "正义之剑，圣骑士的圣物，剑身流转圣光，护佑持剑者。"},
+    {"id": "ring_hircine", "name": "希尔辛之戒", "en": "Ring of Hircine", "kind": "daedric", "daedra": "hircine",
+     "desc": "猎神之戒，佩戴者于月圆之夜化为狼人，成为永世的猎物或猎手。"}
+  ]
+}

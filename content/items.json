@@ -1,0 +1,20 @@
+{
+  "items": [
+    {"item_id": "pine_log",   "name": "松木",      "icon": "🪵", "type": "resource", "stack": 64},
+    {"item_id": "iron_ore",   "name": "铁矿石",    "icon": "⛏️", "type": "resource", "stack": 64},
+    {"item_id": "gold_ore",   "name": "金矿石",    "icon": "💛", "type": "resource", "stack": 64},
+    {"item_id": "river_weed", "name": "水草",      "icon": "🌿", "type": "resource", "stack": 64},
+    {"item_id": "ancient_relic","name": "上古遗物", "icon": "🔮", "type": "treasure", "stack": 16},
+    {"item_id": "wolf_pelt",  "name": "狼皮",      "icon": "🟫", "type": "resource", "stack": 32},
+    {"item_id": "fish",       "name": "鲜鱼",      "icon": "🐟", "type": "food", "stack": 32},
+    {"item_id": "copper_coin","name": "铜币",      "icon": "🪙", "type": "currency", "stack": 99},
+    {"item_id": "mithril",    "name": "秘银",      "icon": "💎", "type": "resource", "stack": 16},
+    {"item_id": "wood_plank", "name": "木板",      "icon": "🟫", "type": "material", "stack": 64},
+    {"item_id": "iron_ingot", "name": "铁锭",      "icon": "🔩", "type": "material", "stack": 64},
+    {"item_id": "iron_sword", "name": "铁剑",      "icon": "🗡️", "type": "weapon", "stack": 1,
+     "damage": 12, "tier": 1},
+    {"item_id": "iron_pickaxe","name": "铁镐",     "icon": "⛏️", "type": "tool", "stack": 1, "tier": 1},
+    {"item_id": "iron_armor", "name": "铁甲",      "icon": "🛡️", "type": "armor", "stack": 1,
+     "defense": 6}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "provinces": [
+    {"id": "summerset", "name": "夏暮岛",  "en": "Summerset Isles", "tile": "☼", "alignment": "good",    "biome": "魔法群岛",  "capital": "阿利诺",   "color": "cyan",
+     "desc": "高等精灵的故乡，水晶塔矗立其上，奥术秩序森严。"},
+    {"id": "valenwood", "name": "威木省",  "en": "Valenwood",       "tile": "Y", "alignment": "good",    "biome": "远古丛林",  "capital": "艾尔登根", "color": "green",
+     "desc": "木精灵的丛林家园，巨木城艾尔登根藏于林海。"},
+    {"id": "elsweyr",   "name": "艾斯维尔", "en": "Elsweyr",        "tile": "E", "alignment": "neutral", "biome": "沙漠荒原",  "capital": "托瓦尔",   "color": "yellow",
+     "desc": "虎人的故乡，分旱地与月林两域，双月悬于其上。"},
+    {"id": "hammerfell","name": "落锤",    "en": "Hammerfell",     "tile": "H", "alignment": "neutral", "biome": "红沙海岸",  "capital": "哨兵城",   "color": "bright_yellow",
+     "desc": "红卫人的 Warrior 海岸，赤红沙漠与古老遗物并存。"},
+    {"id": "high_rock", "name": "高岩",    "en": "High Rock",      "tile": "R", "alignment": "good",    "biome": "翠绿丘陵",  "capital": "匕落",     "color": "blue",
+     "desc": "布雷顿人的领地，骑士、巫法与宗族公国林立。"},
+    {"id": "skyrim",    "name": "天际",    "en": "Skyrim",         "tile": "K", "alignment": "neutral", "biome": "冰原雪山",  "capital": "孤独城",   "color": "white",
+     "desc": "诺德人的北境，喉之雪拔地而起，龙归来之处。"},
+    {"id": "cyrodiil",  "name": "赛瑞迪尔","en": "Cyrodiil",       "tile": "C", "alignment": "good",    "biome": "帝王草原",  "capital": "帝都",     "color": "bright_green",
+     "desc": "帝国中心，白金塔俯瞰帝都，龙火长明。"},
+    {"id": "morrowind", "name": "晨风",    "en": "Morrowind",      "tile": "M", "alignment": "evil",    "biome": "火山灰原",  "capital": "莫恩霍德", "color": "red",
+     "desc": "暗精灵的灰烬之地，红山喷涌， Tribunal 曾在此统治。"},
+    {"id": "black_marsh","name": "黑沼",   "en": "Black Marsh",    "tile": "B", "alignment": "evil",    "biome": "沼泽雨林",  "capital": "利尔莫斯", "color": "magenta",
+     "desc": "阿戈尼亚人的沼泽故乡，青液塔的根脉潜藏水底。"}
+  ]
+}

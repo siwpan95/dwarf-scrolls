@@ -1,0 +1,4 @@
+# dwarf_scrolls dependencies (auto-generated 2026-08-20)
+Pillow
+pytest
+# local deps (sibling projects, not pip): dwarf_scrolls

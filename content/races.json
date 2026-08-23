@@ -1,0 +1,14 @@
+{
+  "races": [
+    {"id": "altmer",  "name": "高等精灵", "en": "Altmer",  "adj": "高等精灵的", "provinces": ["summerset"],          "name_style": "altmer",  "desc": "奥德莫林纯血后裔，奥术造诣登峰造极，自视为圣灵嫡系。"},
+    {"id": "bosmer",  "name": "木精灵",   "en": "Bosmer",  "adj": "木精灵的",   "provinces": ["valenwood"],          "name_style": "bosmer",  "desc": "威木省的猎手，与绿萨普（Green-Sap）立约，食肉禁猎。"},
+    {"id": "dunmer",  "name": "暗精灵",   "en": "Dunmer",  "adj": "暗精灵的",   "provinces": ["morrowind"],          "name_style": "dunmer",  "desc": "被波耶提亚与梅法拉诱离奥德莫林的 Chimer 之后裔，灰烬中建国。"},
+    {"id": "breton",  "name": "布雷顿人", "en": "Breton",  "adj": "布雷顿的",   "provinces": ["high_rock"],          "name_style": "breton",  "desc": "人类与精灵混血，精于巫法与骑士之道。"},
+    {"id": "nord",    "name": "诺德人",   "en": "Nord",    "adj": "诺德的",     "provinces": ["skyrim"],             "name_style": "nord",    "desc": "天际的硬汉，崇敬英雄与巨龙，豪饮而善战。"},
+    {"id": "imperial","name": "帝国人",   "en": "Imperial","adj": "帝国的",     "provinces": ["cyrodiil"],           "name_style": "imperial","desc": "赛瑞迪尔的人族，律法、贸易与帝国雄心的承载者。"},
+    {"id": "redguard","name": "红卫人",   "en": "Redguard","adj": "红卫的",     "provinces": ["hammerfell"],         "name_style": "redguard","desc": "落锤的 Warrior，自 Yokuda 渡海而来，剑术无双。"},
+    {"id": "argonian","name": "阿戈尼亚人","en": "Argonian","adj": "阿戈尼亚的", "provinces": ["black_marsh"],        "name_style": "argonian","desc": "黑沼孵化的蜥人，与根脉（Hist）心灵相连，善毒与潜行。"},
+    {"id": "khajiit", "name": "虎人",     "en": "Khajiit", "adj": "虎人的",     "provinces": ["elsweyr"],            "name_style": "khajiit",  "desc": "艾斯维尔的猫人，月相决定其形，商旅与盗贼皆精。"},
+    {"id": "orsimer", "name": "兽人",     "en": "Orsimer", "adj": "兽人的",     "provinces": ["high_rock","hammerfell"],"name_style": "orsimer","desc": "被放逐的 Malacath 子民，崇尚工艺与要塞，被称为 Pariah。"}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "eras": [
+    {"id": "dawn",    "name": "黎明纪元", "prefix": "黎明", "start": 0,
+     "desc": "时间尚未凝固。阿努与帕多玛在灰暗之间交缠，灵体自虚无中成形，世界在神话中塑形。"},
+    {"id": "merethic","name": "精灵纪元", "prefix": "ME", "start": 100,
+     "desc": "精灵初民离开奥德莫林，渡海定居泰姆瑞尔。人类尚在东方孕育，巨龙盘踞天空。"},
+    {"id": "1e",      "name": "第一纪元", "prefix": "1E", "start": 400,
+     "desc": "人类跨海而来，奴隶起义铸成第一帝国，阿卡托什的龙火在白金塔点燃。"},
+    {"id": "2e",      "name": "第二纪元", "prefix": "2E", "start": 1600,
+     "desc": "帝国崩解，三旗战争席卷大陆，先祖神州崛起，湮灭危机撕裂白金塔。"},
+    {"id": "3e",      "name": "第三纪元", "prefix": "3E", "start": 2600,
+     "desc": "赛普汀帝国鼎盛千年，直至湮灭危机与白金协约，塔洛斯被除名。"},
+    {"id": "4e",      "name": "第四纪元", "prefix": "4E", "start": 3100,
+     "desc": "梭默崛起，红山重燃，世界吞噬者归来——龙，再一次盘旋于天际。"}
+  ],
+  "divines": [
+    {"id": "akatosh",  "name": "阿卡托什", "sphere": "时间·龙神", "desc": "龙神，时间之主，八圣灵之首。龙火由他点燃，维系着奈恩与湮灭之间的屏障。"},
+    {"id": "arkay",    "name": "阿凯",     "sphere": "生死·轮回", "desc": "掌管生死、葬仪与农耕之神的循环。"},
+    {"id": "dibella",  "name": "迪贝拉",   "sphere": "美·爱", "desc": "艺术、美与爱的女神。"},
+    {"id": "julianos", "name": "朱利安诺斯","sphere": "智慧·法", "desc": "智慧、法度与逻辑的男神。"},
+    {"id": "kynareth", "name": "吉奈瑞丝", "sphere": "天空·风", "desc": "天空与元素的女神，最先同意创造 Mundus 的圣灵之一。"},
+    {"id": "mara",     "name": "玛拉",     "sphere": "爱·母性", "desc": "母性、爱与共情的女神。"},
+    {"id": "stendarr", "name": "斯登达",   "sphere": "正义·怜悯", "desc": "正义、怜悯与力量的男神。"},
+    {"id": "zenithar", "name": "泽尼萨尔", "sphere": "劳作·贸易", "desc": "劳作、贸易与财富的男神。"},
+    {"id": "talos",    "name": "塔洛斯",   "sphere": "征服·人帝", "desc": "提图斯·塞普汀封神而成，第八与第九——人类成神的唯一例证。"}
+  ],
+  "daedra": [
+    {"id": "azura",        "name": "阿祖拉",     "sphere": "黄昏与黎明", "desc": "魔神女王，掌管黄昏与黎明、命运与星辰。其飞蛾祭司守护着上古卷轴。"},
+    {"id": "boethiah",     "name": "波耶提亚",   "sphere": "阴谋·背叛", "desc": "欺骗、阴谋与背叛的魔神，曾引导 Chimer 离开奥德莫林。"},
+    {"id": "clavicus_vile","name": "克拉维库斯·维尔","sphere": "愿望·契约", "desc": "以愿望交易为乐的魔神，契约总以代价收场。"},
+    {"id": "hermaeus_mora","name": "赫玛尤斯·莫拉","sphere": "命运·禁忌知识", "desc": "知识之魔神，栖于异典（Apocrypha），以禁忌之书诱人堕落。"},
+    {"id": "hircine",      "name": "希尔辛",     "sphere": "狩猎·追猎", "desc": "猎神，掌管狩猎、追猎与被追猎者。其眷者化为狼人。"},
+    {"id": "malacath",     "name": "玛拉卡斯",   "sphere": "誓约·放逐", "desc": "被放逐的 Trinimac 所化，兽人之父，掌管誓约与复仇。"},
+    {"id": "mehrunes_dagon","name": "梅鲁涅斯·达贡","sphere": "毁灭", "desc": "毁灭之魔神，曾于湮灭危机中率军入侵赛瑞迪尔。"},
+    {"id": "mephala",      "name": "梅法拉",     "sphere": "织网·暗杀", "desc": "织网、暗杀与性别的魔神，曾教导 Chimer 隐秘之道。"},
+    {"id": "meridia",      "name": "梅瑞迪亚",   "sphere": "生机·光明", "desc": "憎恶亡灵的光之魔神，授予黎明 breaker。"},
+    {"id": "molag_bal",    "name": "莫拉格·巴尔", "sphere": "支配·奴役", "desc": "支配之魔神，盘踞冷港（Coldharbour），曾欲将奈恩拉入湮灭。"},
+    {"id": "namira",       "name": "娜米拉",     "sphere": "腐朽·黑暗", "desc": "腐朽与黑暗之魔神，蜘蛛与污秽的主宰。"},
+    {"id": "nocturnal",    "name": "诺克图娜尔", "sphere": "暗夜·秘密", "desc": "暗夜与秘密的魔神，灰 cowl 与盗贼之母。"},
+    {"id": "peryite",      "name": "佩里特",     "sphere": "瘟疫·秩序", "desc": "瘟疫与低阶秩序的魔神。"},
+    {"id": "sanguine",     "name": "桑古因",     "sphere": "享乐·放纵", "desc": "享乐、酒宴与放纵的魔神。"},
+    {"id": "sheogorath",   "name": "谢戈拉丝",   "sphere": "疯狂", "desc": "疯狂之魔神，统御颤栗群岛（Shivering Isles）。"},
+    {"id": "vaermina",     "name": "维尔米娜",   "sphere": "噩梦", "desc": "梦魇与预言之魔神。"},
+    {"id": "jyggalag",     "name": "伊格格-拉格", "sphere": "秩序", "desc": "秩序之魔神，被诅为疯狂，与谢戈拉丝一体两面。"}
+  ],
+  "towers": [
+    {"id": "adamantine", "name": "精金塔", "alt": "迪伦尼塔", "place": "巴尔菲拉岛", "stone": "涅木-阿达巴尔", "desc": "最古之塔，阿卡降临泰姆瑞尔的飞船，空间之锚。"},
+    {"id": "red",        "name": "红塔",   "alt": "红山",     "place": "晨风",       "stone": "洛克兰之心", "desc": "洛克汗之心被掷于此，火山即其脉动。"},
+    {"id": "white_gold", "name": "白金塔", "alt": "白金塔",   "place": "赛瑞迪尔",   "stone": "龙火",       "desc": "帝国之心，龙火在此燃烧，隔绝湮灭。"},
+    {"id": "crystal",    "name": "水晶塔", "alt": "水晶塔",   "place": "夏暮岛",     "stone": "晶石",       "desc": "高等精灵之塔，统御夏暮岛的魔法秩序。"},
+    {"id": "green_sap",  "name": "青液塔", "alt": "青液",     "place": "黑沼",       "stone": "世界之根",   "desc": "阿戈尼亚人之塔，深埋于黑沼的根脉之中。"},
+    {"id": "snow_throat","name": "喉之雪", "alt": "世界之喉", "place": "天际",       "stone": "喉之雪之石", "desc": "诺德人之塔，世界之喉，巨龙高歌之处。"}
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "templates": {
+    "birth": [
+      "于{era}{year}，{adj}{race}英雄{fig}在{site}（{region}）诞生。",
+      "于此年，{faction}的子嗣{fig}降生于{region}的{site}。",
+      "{fig}于{era}{year}年出生，后来成为{faction}的中流砥柱。"
+    ],
+    "death_battle": [
+      "{fig}在{era}{year}年于{site}（{region}）的战阵中陨落，享年{age}岁。",
+      "在{faction2}的围攻下，{fig}于{site}战死，其名被刻入{region}的墓石。",
+      "{era}{year}，{fig}殁于{site}的硝烟，{faction}为之默哀三日。"
+    ],
+    "death_age": [
+      "{fig}于{era}{year}年在{site}安详离世，享年{age}岁，结束了漫长的一生。",
+      "高寿的{fig}在{region}的{site}辞世，享年{age}岁，留下{epithet}之名。"
+    ],
+    "death_assassinate": [
+      "{fig}于{era}{year}年在{site}被暗杀，刺客来自{faction2}。",
+      "夜幕下，{fig}殒于{site}，{faction2}的「沉默之音」取走了其性命。"
+    ],
+    "accession": [
+      "于{era}{year}，{fig}继任{faction}的{leader}，于{site}加冕。",
+      "{fig}在{site}登上{faction}之{leader}的席位，开启了新的纪元。"
+    ],
+    "battle": [
+      "于{era}{year}，{faction}的军队在{site}（{region}）与{faction2}激战。{fig}率军斩杀{count}名敌兵，{fig2}于乱军中陨落。",
+      "{era}{year}年，{site}之战役爆发：{faction}对{faction2}宣战，{fig}指挥若定，{count}人埋骨于此。",
+      "两军会于{site}：{faction}与{faction2}的旗帜在{region}的天空下交错，{fig}赢得此役。"
+    ],
+    "war_start": [
+      "{era}{year}，{faction}向{faction2}宣战，烽火自{site}燃遍{region}。",
+      "于{era}{year}，{faction}与{faction2}的世仇化作刀兵，战争降临泰姆瑞尔。"
+    ],
+    "war_end": [
+      "经年征战，{faction}于{era}{year}在{site}与{faction2}签订和约，血染的疆界就此划定。",
+      "{era}{year}，{faction}击败{faction2}，{region}归其统辖。"
+    ],
+    "alliance": [
+      "于{era}{year}，{faction}与{faction2}在{site}结盟，誓言共御外侮。",
+      "{fig}斡旋之下，{faction}与{faction2}结成同盟，{region}的局势为之一变。"
+    ],
+    "dragon_war": [
+      "巨龙之战争于{era}{year}达到高潮：{fig}于{site}（{region}）高诵龙语，以一卷上古卷轴将巨龙{dragon}放逐于时间长河——时间之伤自此不愈。",
+      "世界吞噬者{dragon}盘踞{site}，{fig}借上古卷轴之力将其掷向未来，{region}得以喘息。"
+    ],
+    "daedric_incursion": [
+      "于{era}{year}，魔神{daedra}撕开裂隙，爪牙自湮灭涌出，攻陷了{region}的{site}。{fig}率众抵抗。",
+      "{daedra}的军团于{era}{year}年降临{site}，{faction}的防线几近崩溃，直到{fig}以{artifact}逆袭。"
+    ],
+    "elder_scroll_found": [
+      "于{era}{year}，先祖飞蛾祭司{fig}在{site}（{region}）的密室中寻得{artifact}。其文一旦被读，便在祭司眼中烙下光斑。",
+      "{artifact}于{era}{year}重现于世，由{fig}自{site}的废墟中取出，记录着尚未发生的命运。"
+    ],
+    "artifact_forged": [
+      "于{era}{year}，{fig}在{site}锻成{artifact}，{faction}自此多了一件镇族之宝。",
+      "{artifact}由{fig}以秘法铸于{region}的{site}，其名响彻泰姆瑞尔。"
+    ],
+    "dragon_break": [
+      "于{era}{year}，时间的织线在{site}（{region}）断裂——『龙破』降临。无数互斥的结局同时发生，又在裂隙闭合后融为一条被改写的历史。无人能确言当时究竟发生了什么。",
+      "{era}{year}的『龙破』使{site}笼罩于灰白的停顿之中：{faction}既胜且败，{fig}既生且逝，直至阿卡收束时间。"
+    ],
+    "tower_activated": [
+      "于{era}{year}，{tower}的{stone}被重新点亮，{region}的空间为之稳固，{faction}的气运随之上升。",
+      "{fig}登临{site}，唤醒了沉睡的{tower}，{stone}的光芒贯穿云霄。"
+    ],
+    "tower_fallen": [
+      "于{era}{year}，{tower}的{stone}黯灭，{region}的根基动摇，{faction}的权柄随之崩解。",
+      "{site}的{tower}倾倒，{stone}碎裂——{region}自此再无锚定。"
+    ],
+    "schism": [
+      "于{era}{year}，{faction}因信仰之争而分裂，{fig}率一部出走{region}，另立炉灶。",
+      "{fig}与{faction}决裂，于{site}自称{leader}，教派自此两分。"
+    ]
+  }
+}

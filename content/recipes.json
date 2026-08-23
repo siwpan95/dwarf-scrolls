@@ -1,0 +1,14 @@
+{
+  "recipes": {
+    "wood_plank": {"needs": [["pine_log", 1]], "yields": 2, "station": "无",
+                  "description": "将原木锯成木板"},
+    "iron_ingot": {"needs": [["iron_ore", 2], ["pine_log", 1]], "yields": 1,
+                   "station": "熔炉", "description": "冶炼铁矿石"},
+    "iron_sword": {"needs": [["iron_ingot", 2], ["wood_plank", 1]], "yields": 1,
+                   "station": "工作台", "description": "锻造铁剑"},
+    "iron_pickaxe": {"needs": [["iron_ingot", 3], ["wood_plank", 2]], "yields": 1,
+                     "station": "工作台", "description": "锻造铁镐"},
+    "iron_armor": {"needs": [["iron_ingot", 4], ["wolf_pelt", 2]], "yields": 1,
+                   "station": "工作台", "description": "锻造铁甲"}
+  }
+}

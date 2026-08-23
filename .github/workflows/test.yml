@@ -1,0 +1,56 @@
+name: Test
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+
+    - name: Run project tests (pytest)
+      run: |
+        cd dwarf_scrolls
+        python -m pytest tests/ -q --tb=short
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.13"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install mypy pytest
+
+    - name: Run mypy type check
+      run: |
+        cd dwarf_scrolls
+        python -m mypy core/legends.py core/world_gen.py core/history_gen.py core/save_manager.py \
+          core/engine_bootstrap.py \
+          game/play_core.py game/play_data.py game/play_components.py \
+          game/play_systems.py game/play_engine.py game/play_ui.py \
+          --ignore-missing-imports --exclude "alloy/.*"
