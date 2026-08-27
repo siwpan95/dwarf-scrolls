@@ -79,7 +79,7 @@ dwarf_scrolls/
 
 - **引擎即地基，非死副本**：`alloy` 物理内联于 `dwarf_scrolls/alloy/`，
   运行时由 `core/engine_bootstrap.py` 把 `dwarf_scrolls` 注入 `sys.path` 最前，使
-  `import alloy` 解析到项目内部副本，**完全脱离** `D:\allin\alloy` 等任何外部项目。
+  `import alloy` 解析到项目内部副本，**完全脱离**任何外部项目路径依赖。
 - **三层分工**：`core/`（数据 + 生成 + 叙事）→ `game/legends_view.py`（视图/导航）
   → `game/legends_cli.py | legends_gui.py`（表现）。CLI 与 GUI 共用同一套
   `LegendsReader` 与 `View`，仅渲染层不同。
