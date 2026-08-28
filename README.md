@@ -117,3 +117,16 @@ Python 3.10+
 ## 许可
 
 MIT
+
+## 规则内核接入判定（R2 · 2026-08-27）
+
+勘查结论：本作数值均为 `random.Random(seed)` 区间随机（世界/编年史生成、休整骰
+3-6 等），无 D&D/GURPS 骰系（d20/3d6/难度表）——alloy.trpg 无同构原语可接；按
+「只接同构原语、绝不破坏行为契约」原则**不接入**（记账声明）。将来若引入检定：
+`from alloy.trpg import roll_3d6, gurps_success_chance`（接入模式参照
+running-group-simulator 的 `core/dice.py`）。
+
+**附带修复（阶段 4 勘查）**：迁仓拍平后应用曾无法导入——仓名 dwarf-scrolls（连字符）
+与历史包名 dwarf_scrolls 不一致，新增仓库根 `dwarf_scrolls.py` 包名桥
+（sys.modules 别名，见文件内记账）；`main.py` 路径保障与 `pytest.ini` 同步修正；
+测试 86/86 全绿。

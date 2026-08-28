@@ -14,10 +14,13 @@ import sys
 from pathlib import Path
 
 # ── 路径保障：使 dwarf_scrolls 包可被导入，并触发内联引擎优先 ──
-_PKG_ROOT = Path(__file__).resolve().parent           # D:\allin\dwarf_scrolls
-_PARENT = _PKG_ROOT.parent                            # D:\allin
-if str(_PARENT) not in sys.path:
-    sys.path.insert(0, str(_PARENT))
+_PKG_ROOT = Path(__file__).resolve().parent           # 仓库根（G:\repos\dwarf-scrolls）
+_PARENT = _PKG_ROOT.parent                            # 仓库父目录
+# 2026-08-27（阶段 4 勘查修复）：仓库按一仓一目录命名为 dwarf-scrolls（连字符），
+# 包名桥 dwarf_scrolls.py 位于仓库根——须把仓库根（而非仅父目录）加入 sys.path。
+for _p in (_PKG_ROOT, _PARENT):
+    if str(_p) not in sys.path:
+        sys.path.insert(0, str(_p))
 
 # engine_bootstrap 是侧效导入：模块级代码把 GAME_ROOT 注入 sys.path 最前、
 # 清除已缓存的外部 alloy，确保内联引擎优先（与 play_core.py 模式一致）。

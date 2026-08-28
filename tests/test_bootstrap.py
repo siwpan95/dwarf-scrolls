@@ -67,17 +67,18 @@ def test_engine_submodules_importable():
 
 
 def test_roots_are_correct():
-    # GAME_ROOT 指向 dwarf_scrolls 目录
-    assert GAME_ROOT.name == "dwarf_scrolls"
-    # 引擎必须解析到 dwarf_scrolls 项目内部的 alloy（无项目外依赖）
+    # 一仓一目录（2026-08-27 阶段 4 勘查修复）：仓库目录名为 dwarf-scrolls（与
+    # gitee 仓名一致），包名 dwarf_scrolls 经仓库根的 dwarf_scrolls.py 桥接。
+    assert GAME_ROOT.name == "dwarf-scrolls"
+    # 引擎必须解析到 dwarf-scrolls 项目内部的 alloy（无项目外依赖）
     import alloy
     root = Path(alloy.__file__).parent
     assert root.name == "alloy"
     assert (root / "__init__.py").exists()
     assert (root / "core").is_dir()
-    # 关键回归：引擎物理路径必须落在 dwarf_scrolls 内部，而非 D:\allin\alloy
+    # 关键回归：引擎物理路径必须落在 dwarf-scrolls 内部，而非 D:\allin\alloy
     normalized = str(root).replace("\\", "/")
-    assert "/dwarf_scrolls/alloy" in normalized, normalized
+    assert "/dwarf-scrolls/alloy" in normalized, normalized
     assert "/allin/alloy" not in normalized, normalized
 
 
