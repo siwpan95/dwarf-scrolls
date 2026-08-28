@@ -6,6 +6,11 @@
 
 ## [Unreleased]
 
+### Changed
+
+- 引擎同步工程（2026-08-28）：内联 alloy 副本经 engine.patch.yaml patch 重放升级到当前版（65 项：新增 trpg 规则内核/fork 双作用域 + 覆盖过期旧版；零定制零冲突）；pytest 86/86 + 世界推演冒烟全绿。
+
+
 ### Fixed
 
 - 阶段 4 勘查修复（2026-08-27）：迁仓拍平后包名 dwarf_scrolls 无法导入——新增仓库根 dwarf_scrolls.py 包名桥 + main.py/pytest.ini 路径修正，应用恢复可用（86/86 全绿）；规则内核接入判定=无同构原语不接入（README 记账）。

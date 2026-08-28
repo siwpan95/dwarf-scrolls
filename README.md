@@ -130,3 +130,5 @@ running-group-simulator 的 `core/dice.py`）。
 与历史包名 dwarf_scrolls 不一致，新增仓库根 `dwarf_scrolls.py` 包名桥
 （sys.modules 别名，见文件内记账）；`main.py` 路径保障与 `pytest.ini` 同步修正；
 测试 86/86 全绿。
+
+**引擎同步（2026-08-28）**：内联副本 `alloy/` 经 patch 重放升级到当前版（engine.patch.yaml 记录 65 项升级，含 `alloy.trpg` 规则内核与 fork 双作用域；零定制零冲突，take_base=[*] 政策保留）——与 sandbox 同流程；pytest 86/86 + 世界推演冒烟全绿。
