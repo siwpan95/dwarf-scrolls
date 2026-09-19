@@ -8,7 +8,7 @@
 
 ### Changed
 
-- 引擎同步工程（2026-08-28）：内联 alloy 副本经 engine.patch.yaml patch 重放升级到当前版（65 项：新增 trpg 规则内核/fork 双作用域 + 覆盖过期旧版；零定制零冲突）；pytest 86/86 + 世界推演冒烟全绿。
+- 引擎同步工程（2026-08-28）：内联 allin_engine 副本经 engine.patch.yaml patch 重放升级到当前版（65 项：新增 trpg 规则内核/fork 双作用域 + 覆盖过期旧版；零定制零冲突）；pytest 86/86 + 世界推演冒烟全绿。
 
 
 ### Fixed

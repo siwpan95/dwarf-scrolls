@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, List
 
 # ── 引擎边界：仅用 Component 基类 ──
-from alloy.core.ecs import Component
+from allin_engine.core.ecs import Component
 
 
 @dataclass

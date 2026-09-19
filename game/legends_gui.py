@@ -7,7 +7,7 @@
 - **顶栏按钮**：←返回 / ⌂落地页 / 🗺世界地图，全部鼠标点击；
 - **无任何键盘依赖**：GUI 自身不绑定任何按键，footer 也只提示鼠标操作。
 
-外观：**复用引擎 ``alloy.render.gui_base.Styles``（DARK_PALETTE）调色板与字体**，
+外观：**复用引擎 ``allin_engine.render.gui_base.Styles``（DARK_PALETTE）调色板与字体**，
 不再自建一套配色——颜色来源就是引擎自带的暗底亮色主题。ansi 色名到 tkinter 十六
 进制色的适配集中在 ``_ansi_to_hex``（tkinter 需要 hex，ansi 名是引擎控制台概念）。
 """
@@ -21,7 +21,7 @@ from tkinter import font as tkfont
 import sys
 import traceback
 
-from alloy.render.gui_base import Styles  # 引擎：暗底亮色调色板 + 字体
+from allin_engine.render.gui_base import Styles  # 引擎：暗底亮色调色板 + 字体
 from dwarf_scrolls.core.legends import WorldModel
 from dwarf_scrolls.core.save_manager import PlaySaveManager
 from dwarf_scrolls.game.legends_view import LegendsReader

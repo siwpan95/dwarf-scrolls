@@ -11,7 +11,7 @@ from __future__ import annotations
 from dwarf_scrolls.core.legends import WorldModel
 from dwarf_scrolls.game.legends_view import LegendsReader, collect_links, MAP_GRID
 from dwarf_scrolls.game.commands import dispatch
-from alloy.render.console_renderer import (
+from allin_engine.render.console_renderer import (
     ConsoleRenderer, ANSI_FOREGROUND, ANSI_RESET, ANSI_BOLD, ANSI_DIM, ANSI_UNDERLINE,
 )
 

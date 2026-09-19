@@ -59,7 +59,7 @@ dwarf_scrolls/
 │   ├── world_gen.py         # TES 世界骨架生成（省份/地点/派系/人物/神器/时代）
 │   ├── history_gen.py       # 程序化 kalpic 历史推演（事件 + 时代）
 │   ├── save_manager.py      # 整座世界序列化为 scroll_NN.json
-│   └── engine_bootstrap.py  # 加载内置引擎地基 alloy（零项目外依赖）
+│   └── engine_bootstrap.py  # 加载内置引擎地基 allin_engine（零项目外依赖）
 ├── game/
 │   ├── legends_view.py      # 共享视图层（View/Span）+ LegendsReader 导航栈 + ASCII 地图
 │   ├── play_core.py         # 游历模式：可玩状态机（移动/休整/战斗/日志）
@@ -70,16 +70,16 @@ dwarf_scrolls/
 ├── content/                 # 主题内容数据（cosmology/provinces/races/names/factions/artifacts/events）
 ├── saves/                   # 世界存档（scroll_NN.json）
 ├── shots/                   # 程序内截图输出（*.png）
-├── alloy/            # 内置引擎地基（自包含，零项目外依赖）
+├── allin_engine/            # 内置引擎地基（自包含，零项目外依赖）
 ├── tests/                   # pytest 测试套件
 └── pyproject.toml
 ```
 
 ## 架构要点
 
-- **引擎即地基，非死副本**：`alloy` 物理内联于 `dwarf_scrolls/alloy/`，
+- **引擎即地基，非死副本**：`allin_engine` 物理内联于 `dwarf_scrolls/allin_engine/`，
   运行时由 `core/engine_bootstrap.py` 把 `dwarf_scrolls` 注入 `sys.path` 最前，使
-  `import alloy` 解析到项目内部副本，**完全脱离**任何外部项目路径依赖。
+  `import allin_engine` 解析到项目内部副本，**完全脱离**任何外部项目路径依赖。
 - **三层分工**：`core/`（数据 + 生成 + 叙事）→ `game/legends_view.py`（视图/导航）
   → `game/legends_cli.py | legends_gui.py`（表现）。CLI 与 GUI 共用同一套
   `LegendsReader` 与 `View`，仅渲染层不同。
@@ -121,9 +121,9 @@ MIT
 ## 规则内核接入判定（R2 · 2026-08-27）
 
 勘查结论：本作数值均为 `random.Random(seed)` 区间随机（世界/编年史生成、休整骰
-3-6 等），无 D&D/GURPS 骰系（d20/3d6/难度表）——alloy.trpg 无同构原语可接；按
+3-6 等），无 D&D/GURPS 骰系（d20/3d6/难度表）——allin_engine.trpg 无同构原语可接；按
 「只接同构原语、绝不破坏行为契约」原则**不接入**（记账声明）。将来若引入检定：
-`from alloy.trpg import roll_3d6, gurps_success_chance`（接入模式参照
+`from allin_engine.trpg import roll_3d6, gurps_success_chance`（接入模式参照
 running-group-simulator 的 `core/dice.py`）。
 
 **附带修复（阶段 4 勘查）**：迁仓拍平后应用曾无法导入——仓名 dwarf-scrolls（连字符）
@@ -131,4 +131,4 @@ running-group-simulator 的 `core/dice.py`）。
 （sys.modules 别名，见文件内记账）；`main.py` 路径保障与 `pytest.ini` 同步修正；
 测试 86/86 全绿。
 
-**引擎同步（2026-08-28）**：内联副本 `alloy/` 经 patch 重放升级到当前版（engine.patch.yaml 记录 65 项升级，含 `alloy.trpg` 规则内核与 fork 双作用域；零定制零冲突，take_base=[*] 政策保留）——与 sandbox 同流程；pytest 86/86 + 世界推演冒烟全绿。
+**引擎同步（2026-08-28）**：内联副本 `allin_engine/` 经 patch 重放升级到当前版（engine.patch.yaml 记录 65 项升级，含 `allin_engine.trpg` 规则内核与 fork 双作用域；零定制零冲突，take_base=[*] 政策保留）——与 sandbox 同流程；pytest 86/86 + 世界推演冒烟全绿。

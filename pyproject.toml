@@ -58,8 +58,8 @@ Issues = "https://github.com/quan/dwarf_scrolls/issues"
 [project.scripts]
 dwarf-scrolls = "dwarf_scrolls.main:main"
 # 注：引擎内置测试套件无独立控制台脚本（run_all.py 内部以顶层
-# `import alloy` 方式加载，依赖 dwarf_scrolls 目录在 sys.path 上，
-# 仅脚本形式 `python alloy/test/run_all.py` 或 pytest 能稳定触发）。
+# `import allin_engine` 方式加载，依赖 dwarf_scrolls 目录在 sys.path 上，
+# 仅脚本形式 `python allin_engine/test/run_all.py` 或 pytest 能稳定触发）。
 # 运行方式见 README「测试」一节。
 
 [tool.setuptools.packages.find]
@@ -67,7 +67,7 @@ include = ["dwarf_scrolls*"]
 
 # 随包分发的本地字体（引擎地基 fonts/ 目录下的字体文件）
 [tool.setuptools.package-data]
-dwarf_scrolls = ["alloy/fonts/*"]
+dwarf_scrolls = ["allin_engine/fonts/*"]
 
 # ── mypy 类型检查 ──
 [tool.mypy]
@@ -77,7 +77,7 @@ warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = false
 check_untyped_defs = true
-exclude = ["alloy/.*"]
+exclude = ["allin_engine/.*"]
 
 [[tool.mypy.overrides]]
 module = [

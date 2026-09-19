@@ -1,6 +1,6 @@
-# alloy API — 游戏侧稳定接口
+# allin_engine API — 游戏侧稳定接口
 
-> 本文档标注 dwarf_scrolls 游戏代码依赖的 alloy 接口。
+> 本文档标注 dwarf_scrolls 游戏代码依赖的 allin_engine 接口。
 > 这些接口被视为「稳定可用」；其余引擎模块为内部实现细节，接口可能漂移。
 
 ---
@@ -9,18 +9,18 @@
 
 | 接口 | 路径 | 用途 | 稳定性 |
 |------|------|------|--------|
-| `Component` | `alloy.core.ecs` | ECS 组件基类 | ✅ 稳定 |
-| `System` | `alloy.core.ecs` | ECS 系统基类，带 priority | ✅ 稳定 |
-| `World` | `alloy.core.ecs` | ECS 世界容器 + 系统调度 | ✅ 稳定 |
-| `Entity` | `alloy.core.ecs` | 实体（add/get 组件） | ✅ 稳定 |
-| `EventBus` | `alloy.core.event_bus` | 事件总线（subscribe/emit） | ✅ 稳定 |
-| `EventTypes` | `alloy` (__init__) | 事件类型枚举 | ✅ 稳定 |
-| `FixedTimestepLoop` | `alloy.core.game_loop` | 固定步长主循环 + advance | ✅ 稳定 |
+| `Component` | `allin_engine.core.ecs` | ECS 组件基类 | ✅ 稳定 |
+| `System` | `allin_engine.core.ecs` | ECS 系统基类，带 priority | ✅ 稳定 |
+| `World` | `allin_engine.core.ecs` | ECS 世界容器 + 系统调度 | ✅ 稳定 |
+| `Entity` | `allin_engine.core.ecs` | 实体（add/get 组件） | ✅ 稳定 |
+| `EventBus` | `allin_engine.core.event_bus` | 事件总线（subscribe/emit） | ✅ 稳定 |
+| `EventTypes` | `allin_engine` (__init__) | 事件类型枚举 | ✅ 稳定 |
+| `FixedTimestepLoop` | `allin_engine.core.game_loop` | 固定步长主循环 + advance | ✅ 稳定 |
 
 ### ECS 常用操作
 
 ```python
-from alloy.core.ecs import Component, System, World
+from allin_engine.core.ecs import Component, System, World
 
 # 组件定义
 @dataclass
@@ -44,7 +44,7 @@ hp = p.get(Health)
 ### EventBus 用法
 
 ```python
-from alloy import EventTypes
+from allin_engine import EventTypes
 
 # 订阅
 bus.subscribe(EventTypes.PLAYER_MOVED, self.on_moved)
@@ -62,10 +62,10 @@ PLAYER_MOVED, MOB_SPAWNED, MOB_DEFEATED, COMBAT_START, PLAYER_DIED, SHARD_FOUND,
 
 | 接口 | 路径 | 用途 | 稳定性 |
 |------|------|------|--------|
-| `GameEngine` | `alloy` (__init__) | 引擎装配器（add_core/advance） | ✅ 稳定 |
+| `GameEngine` | `allin_engine` (__init__) | 引擎装配器（add_core/advance） | ✅ 稳定 |
 
 ```python
-from alloy import GameEngine
+from allin_engine import GameEngine
 
 engine = GameEngine().add_core()
 world = engine.world   # ECS World
@@ -80,11 +80,11 @@ engine.advance(dt)     # 驱动 loop.update
 
 | 接口 | 路径 | 用途 | 稳定性 |
 |------|------|------|--------|
-| `ConsoleRenderer` | `alloy.render.console_renderer` | ANSI 终端渲染 | ⚠️ 游戏通过 legends_cli 间接使用 |
-| `Styles` | `alloy.render.gui_base` | tkinter 调色板 + 字体 | ✅ 稳定（legends_gui 直接使用） |
+| `ConsoleRenderer` | `allin_engine.render.console_renderer` | ANSI 终端渲染 | ⚠️ 游戏通过 legends_cli 间接使用 |
+| `Styles` | `allin_engine.render.gui_base` | tkinter 调色板 + 字体 | ✅ 稳定（legends_gui 直接使用） |
 
 ```python
-from alloy.render.gui_base import Styles
+from allin_engine.render.gui_base import Styles
 
 s = Styles(theme="dark")
 s.BG_DARKEST, s.TEXT_PRIMARY, s.ACCENT_BLUE, s.ACCENT_GOLD, ...
@@ -96,7 +96,7 @@ s.fonts["body"], s.fonts["heading"], s.fonts["button"]
 ## 引擎模块层级概览
 
 ```
-alloy/
+allin_engine/
 ├── __init__.py          ← GameEngine, EventTypes 入口
 ├── core/                ← ECS + EventBus + Loop（Layer 0）✅ 稳定
 │   ├── ecs.py

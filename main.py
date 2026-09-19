@@ -23,7 +23,7 @@ for _p in (_PKG_ROOT, _PARENT):
         sys.path.insert(0, str(_p))
 
 # engine_bootstrap 是侧效导入：模块级代码把 GAME_ROOT 注入 sys.path 最前、
-# 清除已缓存的外部 alloy，确保内联引擎优先（与 play_core.py 模式一致）。
+# 清除已缓存的外部 allin_engine，确保内联引擎优先（与 play_core.py 模式一致）。
 import dwarf_scrolls.core.engine_bootstrap  # noqa: E402
 
 from dwarf_scrolls.core.world_gen import WorldGenerator       # noqa: E402

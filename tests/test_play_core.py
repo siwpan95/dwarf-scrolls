@@ -1,4 +1,4 @@
-"""游历模式 ECS 测试 —— 验证 ``PlayEngine`` 长在 alloy 的
+"""游历模式 ECS 测试 —— 验证 ``PlayEngine`` 长在 allin_engine 的
 ECS（World/Entity/Component/System）+ 事件总线（EventBus）+ 固定步长主循环
 （FixedTimestepLoop）之上，而非另写一套状态机。
 
@@ -13,7 +13,7 @@ ECS（World/Entity/Component/System）+ 事件总线（EventBus）+ 固定步长
 """
 import itertools
 
-from alloy import EventTypes
+from allin_engine import EventTypes
 
 from dwarf_scrolls.core.world_gen import WorldGenerator
 from dwarf_scrolls.core.history_gen import HistoryGenerator

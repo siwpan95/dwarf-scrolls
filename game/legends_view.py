@@ -15,8 +15,8 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from dwarf_scrolls.core.legends import WorldModel, entry_page
 from dwarf_scrolls.core.engine_bootstrap import ensure_engine_loaded
-ensure_engine_loaded()  # 确保 import alloy 解析到项目内置引擎地基
-from alloy.world.map_data import MapData  # 引擎：字符网格地图数据
+ensure_engine_loaded()  # 确保 import allin_engine 解析到项目内置引擎地基
+from allin_engine.world.map_data import MapData  # 引擎：字符网格地图数据
 
 ALIGN_COLOR = {
     "good": "cyan", "evil": "red", "neutral": "green",

@@ -1,6 +1,6 @@
 """游历模式 —— 引擎装配器。
 
-PlayEngine 用 alloy 的 GameEngine（ECS + EventBus + FixedTimestepLoop）
+PlayEngine 用 allin_engine 的 GameEngine（ECS + EventBus + FixedTimestepLoop）
 装配完整的游历模式：创建玩家实体、装配七个系统、接线事件总线、
 提供命令 API、支持快照存档。
 
@@ -25,8 +25,8 @@ import dwarf_scrolls.core.engine_bootstrap  # 触发内联引擎优先
 # GameEngine  — 引擎装配器入口，提供 world/bus/loop/advance
 # EventTypes  — 事件类型枚举，游戏侧订阅/发射用
 # World       — ECS 容器，只使用 get_entity/get_data/set_data/update
-from alloy import EventTypes, GameEngine
-from alloy.core.ecs import World
+from allin_engine import EventTypes, GameEngine
+from allin_engine.core.ecs import World
 
 from dwarf_scrolls.core.legends import WorldModel, Region
 from dwarf_scrolls.game.play_data import ADJACENCY
@@ -41,7 +41,7 @@ from dwarf_scrolls.game.play_systems import (
 
 
 class PlayEngine:
-    """用 alloy 的 GameEngine 装配游历模式。"""
+    """用 allin_engine 的 GameEngine 装配游历模式。"""
 
     def __init__(self, model: WorldModel, seed: int = 0, save_path: Optional[str] = None) -> None:
         self.model = model

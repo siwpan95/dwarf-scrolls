@@ -1,6 +1,6 @@
 """游历模式 —— ECS 系统。
 
-七个游戏系统，建立在 alloy 的 ECS + EventBus 之上：
+七个游戏系统，建立在 allin_engine 的 ECS + EventBus 之上：
 - TravelSystem: 处理玩家命令（移动/休整/探索/宣誓）
 - EncounterSystem: 按省份阵营与玩家誓言分流事件
 - CombatSystem: 多回合战斗结算
@@ -20,8 +20,8 @@ from typing import Any, Dict, List, Optional, TYPE_CHECKING
 # EventTypes — 事件类型，游戏侧 emit/subscribe
 # System     — ECS 系统基类，只覆写 update()
 # World      — ECS 容器，只使用 get_entity/get_data/set_data
-from alloy import EventTypes
-from alloy.core.ecs import System, World
+from allin_engine import EventTypes
+from allin_engine.core.ecs import System, World
 
 from dwarf_scrolls.core.legends import WorldModel
 from dwarf_scrolls.game.play_data import (

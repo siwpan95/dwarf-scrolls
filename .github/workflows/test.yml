@@ -53,4 +53,4 @@ jobs:
           core/engine_bootstrap.py \
           game/play_core.py game/play_data.py game/play_components.py \
           game/play_systems.py game/play_engine.py game/play_ui.py \
-          --ignore-missing-imports --exclude "alloy/.*"
+          --ignore-missing-imports --exclude "allin_engine/.*"
